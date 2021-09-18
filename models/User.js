@@ -26,6 +26,7 @@ const userSchema = new mongoose.Schema(
 			unique: true,
 		},
 		isVerified: { type: Boolean, default: false },
+		isAdmin: { type: Boolean, default: false },
 	},
 	{ timestamps: true }
 );

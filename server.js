@@ -1,7 +1,6 @@
 import express from "express";
 import { config as dotEnv } from "dotenv";
 import authRouter from "./routes/api/auth.js";
-import mongoose from "mongoose";
 import connectToMongo from "./controllers/DatabaseController.js";
 
 dotEnv();

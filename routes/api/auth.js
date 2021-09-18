@@ -20,13 +20,13 @@ router.post("/register", register);
 // @type PUBLIC
 router.post("/login", login);
 
-// @url POST /api/auth/login
-// @desc login a user
+// @url get /api/auth/confirmation/:email/:token
+// @desc confirm a user email
 // @type PUBLIC
 router.get("/confirmation/:email/:token", confirmEmail);
 
-// @url POST /api/auth/login
-// @desc login a user
+// @url POST /api/auth/confirmation
+// @desc resend confirmation email
 // @type PUBLIC
 router.post("/confirmation", resendVerification);
 
